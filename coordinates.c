@@ -1,5 +1,20 @@
-#include "coordinates.h"
+/* Author: Jeremy Becnel
+Date 12/2/2023
+This code is designed to provide functions which convert from longitude and latitude
+to distance and bearing. The longitude and latitude using the conventions that
+measurements are between -180 and 180 with negatives values representing West or South
+and postive values represent North or East.
+
+The distance is computed assuming the Earth is a Sphere using Haversine Formula.
+Distance is measured in km.
+
+The bearing returns an angle in degrees between 0 and 360 as a double (not degrees / minutes /seconds). 
+
 // code based off discussion at https://www.movable-type.co.uk/scripts/latlong.html
+
+Test Code: test_coordinates.c
+*/
+#include "coordinates.h"
 
 #define _USE_MATH_DEFINES
 #include <math.h>

@@ -1,3 +1,12 @@
+/* Author: Jeremy Becnel
+Date 12/2/2023
+This file test procedures in teh coordinates.c. The methods are designed
+to convert from longitude/latitude coordinates to distance and bearing
+and vice versa. 
+The test case below uses three different locations. 
+Results can be verified at
+https://www.movable-type.co.uk/scripts/latlong.html
+*/
 #include <stdio.h>
 #include "coordinates.h"
 
