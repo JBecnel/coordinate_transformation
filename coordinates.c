@@ -1,16 +1,18 @@
 /* Author: Jeremy Becnel
 Date 12/2/2023
-This code is designed to provide functions which convert from longitude and latitude
+This code is designed to provide functions that convert from longitude and latitude
 to distance and bearing. The longitude and latitude using the conventions that
-measurements are between -180 and 180 with negatives values representing West or South
-and postive values represent North or East.
+measurements are between -180 and 180, with negative values representing West or South
+and positive values representing North or East.
 
-The distance is computed assuming the Earth is a Sphere using Haversine Formula.
+The distance is computed assuming the Earth is a Sphere using the Haversine Formula.
 Distance is measured in km.
 
-The bearing returns an angle in degrees between 0 and 360 as a double (not degrees / minutes /seconds). 
+The bearing returns an angle in degrees between 0 and 360 as a double (not degrees/minutes/seconds). 
 
-// code based off discussion at https://www.movable-type.co.uk/scripts/latlong.html
+// code based on discussion at https://www.movable-type.co.uk/scripts/latlong.html
+// document for atan2 https://www.ibm.com/docs/en/i/7.2?topic=functions-atan-atan2-calculate-arctangent
+// -- returns a value between -pi and pi
 
 Test Code: test_coordinates.c
 */
